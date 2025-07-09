@@ -1,0 +1,90 @@
+{
+    "AC": {
+        "CalibratedEqOdds": {
+            "Acc": 0.0,
+            "DP": 0.0,
+            "EO": 0.88
+        },
+        "EqOdds": {
+            "Acc": 0.0,
+            "DP": 0.0,
+            "EO": 0.0
+        },
+        "ROC": {
+            "Acc": 0.0,
+            "DP": 0.0,
+            "EO": 0.093
+        },
+        "prune_attributes": {
+            "Acc": 0.552,
+            "DP": 0.029,
+            "EO": 0.043
+        }
+    },
+    "BM": {
+        "CalibratedEqOdds": {
+            "Acc": 0.902,
+            "DP": 0.099,
+            "EO": 0.0
+        },
+        "EqOdds": {
+            "Acc": 0.002,
+            "DP": 0.178,
+            "EO": 0.111
+        },
+        "ROC": {
+            "Acc": 0.0,
+            "DP": 0.864,
+            "EO": 0.0
+        },
+        "prune_attributes": {
+            "Acc": 0.784,
+            "DP": 0.406,
+            "EO": 0.136
+        }
+    },
+    "GC": {
+        "CalibratedEqOdds": {
+            "Acc": 0.93,
+            "DP": 0.563,
+            "EO": 0.478
+        },
+        "EqOdds": {
+            "Acc": 0.052,
+            "DP": 0.848,
+            "EO": 0.068
+        },
+        "ROC": {
+            "Acc": 0.054,
+            "DP": 0.143,
+            "EO": 0.124
+        },
+        "prune_attributes": {
+            "Acc": 0.816,
+            "DP": 0.53,
+            "EO": 0.079
+        }
+    },
+    "compas": {
+        "CalibratedEqOdds": {
+            "Acc": 0.0,
+            "DP": 1.0,
+            "EO": 1.0
+        },
+        "EqOdds": {
+            "Acc": 0.038,
+            "DP": 0.727,
+            "EO": 0.554
+        },
+        "ROC": {
+            "Acc": 0.0,
+            "DP": 0.0,
+            "EO": 0.0
+        },
+        "prune_attributes": {
+            "Acc": 0.085,
+            "DP": 0.0,
+            "EO": 0.0
+        }
+    }
+}

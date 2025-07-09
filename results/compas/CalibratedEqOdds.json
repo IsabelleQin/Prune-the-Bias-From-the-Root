@@ -1,0 +1,86 @@
+{
+    "compas-3": {
+        "Original": {
+            "Acc": 0.73,
+            "DP": 0.06,
+            "EO": 0.044
+        },
+        "Corrected": {
+            "Acc": 0.27,
+            "DP": 0.06,
+            "EO": 0.044
+        }
+    },
+    "compas-7": {
+        "Original": {
+            "Acc": 0.725,
+            "DP": 0.097,
+            "EO": 0.068
+        },
+        "Corrected": {
+            "Acc": 0.275,
+            "DP": 0.097,
+            "EO": 0.068
+        }
+    },
+    "compas-6": {
+        "Original": {
+            "Acc": 0.739,
+            "DP": 0.04,
+            "EO": 0.016
+        },
+        "Corrected": {
+            "Acc": 0.261,
+            "DP": 0.04,
+            "EO": 0.016
+        }
+    },
+    "compas-2": {
+        "Original": {
+            "Acc": 0.728,
+            "DP": 0.087,
+            "EO": 0.076
+        },
+        "Corrected": {
+            "Acc": 0.272,
+            "DP": 0.087,
+            "EO": 0.076
+        }
+    },
+    "compas-5": {
+        "Original": {
+            "Acc": 0.72,
+            "DP": 0.046,
+            "EO": 0.008
+        },
+        "Corrected": {
+            "Acc": 0.28,
+            "DP": 0.046,
+            "EO": 0.008
+        }
+    },
+    "compas-1": {
+        "Original": {
+            "Acc": 0.735,
+            "DP": 0.081,
+            "EO": 0.123
+        },
+        "Corrected": {
+            "Acc": 0.265,
+            "DP": 0.081,
+            "EO": 0.123
+        }
+    },
+    "compas-4": {
+        "Original": {
+            "Acc": 0.73,
+            "DP": 0.014,
+            "EO": 0.025
+        },
+        "Corrected": {
+            "Acc": 0.27,
+            "DP": 0.014,
+            "EO": 0.025
+        }
+    }
+}
