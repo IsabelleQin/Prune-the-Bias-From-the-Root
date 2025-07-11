@@ -49,5 +49,5 @@ for model_file in model_files:
     result_dict[model_name]['Corrected']['DP'] = round(demographic_parity_difference(y_test, y_pred, sensitive_features=sens_features), 3)
     result_dict[model_name]['Corrected']['EO'] = round(equal_opportunity_difference(y_test, y_pred, sensitive_features=sens_features), 3)
 
-with open('results/GC/mute_attributes.json', "w") as file:
+with open('results/GC/prune_attributes.json', "w") as file:
     json.dump(result_dict, file, indent=4)

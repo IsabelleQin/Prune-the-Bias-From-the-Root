@@ -64,6 +64,6 @@ for model_file in model_files:
         subgroup_idx = np.where((sens_features[:, 0] == subgroup[0]) & (sens_features[:, 1] == subgroup[1]))[0]
         result_dict[model_name]['Corrected']['TPR'][str(subgroup)] = round(float(sum(y_test[subgroup_idx] == y_pred[subgroup_idx])/len(subgroup_idx)), 3)
 
-with open('results/AC/mute_multiple_attributes.json', "w") as file:
+with open('results/AC/prune_multiple_attributes.json', "w") as file:
     json.dump(result_dict, file, indent=4)
     
