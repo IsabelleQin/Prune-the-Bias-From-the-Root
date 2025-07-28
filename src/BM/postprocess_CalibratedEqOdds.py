@@ -6,6 +6,7 @@ from utils.verif_utils import *
 import os
 import numpy as np
 from fairlearn.metrics import *
+from sklearn.metrics import accuracy_score
 from aif360.datasets import StandardDataset
 from aif360.algorithms.postprocessing.calibrated_eq_odds_postprocessing import CalibratedEqOddsPostprocessing
 import json
@@ -75,7 +76,6 @@ for model_file in model_files:
     # Upper and lower bound on the fairness metric used
     cpp = CalibratedEqOddsPostprocessing(privileged_groups = privileged_groups,
                                      unprivileged_groups = unprivileged_groups,
-                                     cost_constraint='fnr',
                                      seed=2025)
     
     

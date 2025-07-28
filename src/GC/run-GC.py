@@ -6,6 +6,7 @@ from utils.verif_utils import *
 import os
 import numpy as np
 from fairlearn.metrics import *
+from sklearn.metrics import accuracy_score
 import json
 
 df, X_train, y_train, X_test, y_test = load_german()

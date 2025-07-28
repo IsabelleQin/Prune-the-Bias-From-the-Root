@@ -7,6 +7,8 @@ import os
 import numpy as np
 import json
 from fairlearn.metrics import *
+from sklearn.metrics import accuracy_score
+
 
 df, X_train, y_train, X_test, y_test = load_adult_ac1()
 

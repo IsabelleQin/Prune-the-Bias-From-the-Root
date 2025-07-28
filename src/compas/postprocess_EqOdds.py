@@ -9,6 +9,7 @@ from fairlearn.metrics import *
 from aif360.datasets import StandardDataset
 from aif360.algorithms.postprocessing.eq_odds_postprocessing import EqOddsPostprocessing
 import json
+from sklearn.metrics import accuracy_score
 
 df, X_train, y_train, X_val, y_val, X_test, y_test = load_compas()
 model_dir = './models/compas/'
@@ -18,17 +19,17 @@ X_train_df = pd.DataFrame(np.concatenate([X_train, y_train.reshape(-1, 1)], axis
 X_test_df = pd.DataFrame(np.concatenate([X_test, y_test.reshape(-1, 1)], axis=1), columns=df.columns)
 
 dataset_test = StandardDataset(X_test_df, label_name='Two_yr_Recidivism',
-                 favorable_classes=[0, 0],
-                 protected_attribute_names=['Age', 'Race'],
-                 privileged_classes=[[1], [0]],
+                 favorable_classes=[0],
+                 protected_attribute_names=['Race'],
+                 privileged_classes=[[0]],
                  instance_weights_name=None,
                  categorical_features=['Number_of_Priors', 'score_factor', 'Female', 'Misdemeanor'],
                  na_values=[], custom_preprocessing=None)
 
 dataset_train = StandardDataset(X_train_df, label_name='Two_yr_Recidivism',
-                 favorable_classes=[0, 0],
-                 protected_attribute_names=['Age', 'Race'],
-                 privileged_classes=[[1], [0]],
+                 favorable_classes=[0],
+                 protected_attribute_names=['Race'],
+                 privileged_classes=[[0]],
                  instance_weights_name=None,
                  categorical_features=['Number_of_Priors', 'score_factor', 'Female', 'Misdemeanor'],
                  na_values=[], custom_preprocessing=None)

@@ -7,6 +7,7 @@ import os
 import numpy as np
 from fairlearn.metrics import *
 import json
+from sklearn.metrics import accuracy_score
 
 df, X_train, y_train, X_test, y_test = load_german()
 model_dir = './models/german/'

@@ -9,6 +9,7 @@ from fairlearn.metrics import *
 from aif360.datasets import StandardDataset
 from aif360.algorithms.postprocessing.eq_odds_postprocessing import EqOddsPostprocessing
 import json
+from sklearn.metrics import accuracy_score
 
 df, X_train, y_train, X_test, y_test = load_adult_ac1()
 model_dir = './models/adult/'
