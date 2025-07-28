@@ -39,7 +39,7 @@ While ensuring individual fairness on the single attribute, attribute pruning **
 
 ![image](./tables/rq1_res.png?raw=true)
 
-![image](./tables/rq1_ttest.png?raw=true)
+![image](./tables/rq1_statistic_test.png?raw=true)
 
 ### RQ2: How does multi-attribute pruning impact and aid understanding of the original models?
 According to our experiment on 24 models, multi-attribute pruning can also retain a certain level of accuracy while enhancing individual fairness, as shown in the table below. 
