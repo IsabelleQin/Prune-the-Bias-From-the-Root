@@ -1,5 +1,5 @@
-# Prune the Bias From the Root: Bias Removal and Fairness Estimation by Muting Sensitive Attributes in Pre-trained DNN Models
-### The replication package for "Prune the Bias From the Root: Bias Removal and Fairness Estimation by Muting Sensitive Attributes in Pre-trained DNN Models". 
+# Prune Bias From the Root: Bias Removal and Fairness Estimation by Pruning Sensitive Attributes in Pre-trained DNN Models
+### The replication package for "Prune Bias From the Root: Bias Removal and Fairness Estimation by Pruning Sensitive Attributes in Pre-trained DNN Models". 
 
 ## Introduction
 Attribute pruning is a simple yet effective post-processing technique that enforces individual fairness by zeroing out sensitive attribute weights in a pre-trained DNN’s input layer. To ensure the generalizability of our results, we conducted experiments on 32 models and 4 widely used datasets, and compared attribute pruning’s performance with 3 baseline post-processing methods (i.e., equalized odds, calibrated equalized odds, and ROC). In this study, we reveal the effectiveness of sensitive attribute pruning on small-scale DNN bias removal and discuss its usage in multi-attribute fairness estimation by answering the following research questions: 
@@ -35,7 +35,7 @@ To comprehensively understand the impact of sensitive attribute pruning, we sele
 To replicate the experiments, run the code in the ```src``` folder, the sub-folders contain the code for implementing the post-processing methods on each dataset. To obtain the basic results, run all the codes in each folder. The results will be stored in the ```results``` folder; we also provide the code for statistical analyses (i.e., paired t-test for EO and DP, one-sided normal tolerance interval test for accuracy) under this folder. To conduct the statistical analyses, run ```statistic_test.py``` and check the results in ```single_att_ttest.json```.
 
 ### RQ1: How does single-attribute pruning perform in comparison to the existing post-processing methods?
-While ensuring individual fairness on the single attribute, attribute pruning **will not significantly** impact accuracy. It preserved the highest post-processing accuracy among the four methods on 23 out of 32 models. It can also improve the two group accuracies in general, but its improvements are insignificant and not always optimal in comparison to the other three methods. Further, given the theoretical difference between individual fairness and group fairness, attribute pruning may even harm group fairness when the observed dataset is not comprehensive enough to cover the whole data space. 
+While ensuring strict individual fairness on the single attribute, attribute pruning **will not significantly** impact accuracy. It preserved the highest post-processing accuracy among the four methods on 23 out of 32 models. However, attribute pruning’s effect on group fairness metrics is often inconsistent. Given the theoretical difference between individual fairness and group fairness, attribute pruning may even harm group fairness when the observed dataset is not comprehensive enough to cover the whole data space. 
 
 ![image](./tables/rq1_res.png?raw=true)
 
