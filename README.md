@@ -67,6 +67,7 @@ It can also be used to estimate multi-attribute group fairness in models with si
     ├── GC
     └── compas
 ├── utils
-├── tables 
+├── tables
+├── Prune Bias From the Root.pdf # Paper preprint
 └── README.md
 ```
